@@ -18,7 +18,7 @@ Check current balance
 
 
 
-POST     /api/account/deposit Deposit money into the account. Requires amount as a query param.
-POST     /api/account/withdraw  Withdraw money from the account. Requires amount as a query param.
-GET      /api/account/statement Retrieve the list of all deposit/withdrawal operations performed on the account.
-GET      /api/account/balance Retrieve the current account balance.
+# /api/account/deposit Deposit money into the account. Requires amount as a query param.
+# /api/account/withdraw  Withdraw money from the account. Requires amount as a query param.
+# /api/account/statement Retrieve the list of all deposit/withdrawal operations performed on the account.
+# /api/account/balance Retrieve the current account balance.
