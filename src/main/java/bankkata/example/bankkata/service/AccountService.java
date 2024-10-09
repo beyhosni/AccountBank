@@ -3,6 +3,8 @@ package bankkata.example.bankkata.service;
 
 import bankkata.example.bankkata.model.*;
 import org.springframework.stereotype.*;
+
+import java.math.BigDecimal;
 import java.util.List;
 
 
@@ -11,11 +13,11 @@ import java.util.List;
 public class AccountService {
     private Account account = new Account();
 
-    public void deposit (double amount) {
+    public void deposit (BigDecimal amount) {
         account.deposit(amount);
     }
 
-    public void withdraw(double amount){
+    public void withdraw(BigDecimal amount){
         account.withdraw(amount);
     }
 
@@ -23,7 +25,7 @@ public class AccountService {
         return account.getOperations();
     }
 
-    public double getBalance() {
+    public BigDecimal getBalance() {
         return account.getBalance();
     }
 }
